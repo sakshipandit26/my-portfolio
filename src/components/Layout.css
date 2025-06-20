@@ -1,0 +1,19 @@
+.social-links-sidebar { position: fixed; left: 1.5rem; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 1rem; z-index: 50; }
+@media (min-width: 768px) { .social-links-sidebar { left: 3rem; } }
+.social-icon { padding: 0.5rem; border: 1px solid var(--border-light); border-radius: 9999px; transition: all 0.3s ease; }
+.dark .social-icon { border-color: var(--border-dark); }
+.light .social-icon { color: #495057; }
+.dark .social-icon { color: #adb5bd; }
+.social-icon:hover { background-color: black; color: white; border-color: black; }
+.dark .social-icon:hover { background-color: white; color: black; border-color: white; }
+.vertical-email { position: fixed; right: 1.5rem; bottom: 0; height: 12rem; display: none; align-items: flex-end; z-index: 50; }
+@media (min-width: 768px) { .vertical-email { display: flex; right: 3rem; } }
+.vertical-email-wrapper { transform: rotate(90deg); transform-origin: bottom right; display: flex; align-items: center; }
+.vertical-email a { font-size: 0.875rem; font-weight: 500; letter-spacing: 0.1em; white-space: nowrap; text-decoration: none; transition: color 0.3s ease; }
+.light .vertical-email a { color: #495057; }
+.dark .vertical-email a { color: #adb5bd; }
+.light .vertical-email a:hover { color: #000; }
+.dark .vertical-email a:hover { color: #fff; }
+.vertical-email .line { width: 6rem; height: 1px; margin-left: 1rem; }
+.light .vertical-email .line { background-color: #adb5bd; }
+.dark .vertical-email .line { background-color: #495057; }
